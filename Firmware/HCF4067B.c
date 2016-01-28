@@ -179,6 +179,8 @@ PinLevel HCF4067B_GetChannelLevel(uint8_t channelNum)
 	{
 		HCF4067B_SetChannel(channelNum);  
 
+		Delay_10usec;
+
 		if(HCF4067B_COM_PN())
 		{
 			level = HIGH;

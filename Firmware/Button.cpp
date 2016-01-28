@@ -4,7 +4,6 @@
 #error [E030] Не определен заголовочный файл Button.h
 #endif 
 
-uint8_t _msg_btn_on[]  = "MSG:Btn ON";
 //uint8_t _msg_btn_off[]  = "MSG:Button OFF";
 
 Boolean Button::getPin()
@@ -21,7 +20,7 @@ void Button::handle()
       {
          if(lastKeyState == 0)        // Состояние кнопки было - "отжата"
          {
-			usart.printLn(&_msg_btn_on, sizeof(_msg_btn_on), STRING);
+			//usart.printLn(&_msg_btn_on, sizeof(_msg_btn_on), STRING);
 
             buttonHandleClock.setStartTics();           // Запоминаем значение таймера
             lastKeyState = 1;         // Записываем, что кнопка "нажата"

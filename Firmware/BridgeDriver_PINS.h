@@ -50,7 +50,7 @@
 #define  BRIDGE_FORW_SENSE_DDR    DDRA   
 #define  BRIDGE_FORW_SENSE_PORT   PORTA  
 #define  BRIDGE_FORW_SENSE_PIN    PINA   
-#define  BRIDGE_FORW_SENSE_LINE   PA2  
+#define  BRIDGE_FORW_SENSE_LINE   PA4  
 
 #define BRIDGE_FORW_SENSE_DR(x)\
   {\
@@ -90,7 +90,7 @@
 #define  BRIDGE_BACK_SENSE_DDR    DDRA   
 #define  BRIDGE_BACK_SENSE_PORT   PORTA  
 #define  BRIDGE_BACK_SENSE_PIN    PINA   
-#define  BRIDGE_BACK_SENSE_LINE   PA2  
+#define  BRIDGE_BACK_SENSE_LINE   PA4  
 
 #define BRIDGE_BACK_SENSE_DR(x)\
   {\

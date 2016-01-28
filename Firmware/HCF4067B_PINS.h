@@ -50,13 +50,13 @@
 
 //------------------------------------------------------------------------------
 /// Регистр настройки для HCF4067B_A
-#define  HCF4067B_A_DDR   DDRB   
+#define  HCF4067B_A_DDR   DDRA   
 /// Порт для HCF4067B_A
-#define  HCF4067B_A_PORT  PORTB  
+#define  HCF4067B_A_PORT  PORTA  
 /// Выводы порта для HCF4067B_A
-#define  HCF4067B_A_PIN   PINB  
+#define  HCF4067B_A_PIN   PINA  
 /// Вывод HCF4067B_A 
-#define  HCF4067B_A_LINE  PB0    
+#define  HCF4067B_A_LINE  PA2    
 
 /// <summary>
 /// Настройка направления линии HCF4067B_A - Общий вход.
@@ -87,13 +87,13 @@
 
 //------------------------------------------------------------------------------
 /// Регистр настройки для HCF4067B_B
-#define  HCF4067B_B_DDR   DDRC   
+#define  HCF4067B_B_DDR   DDRB   
 /// Порт для HCF4067B_B
-#define  HCF4067B_B_PORT  PORTC  
+#define  HCF4067B_B_PORT  PORTB  
 /// Выводы порта для HCF4067B_B
-#define  HCF4067B_B_PIN   PINC  
+#define  HCF4067B_B_PIN   PINB  
 /// Вывод HCF4067B_B 
-#define  HCF4067B_B_LINE  PC0    
+#define  HCF4067B_B_LINE  PB0    
 
 /// <summary>
 /// Настройка направления линии HCF4067B_B - Общий вход.
@@ -167,7 +167,7 @@
 /// Выводы порта для HCF4067B_D
 #define  HCF4067B_D_PIN   PINB 
 /// Вывод HCF4067B_D 
-#define  HCF4067B_D_LINE  PB2   
+#define  HCF4067B_D_LINE  PB5   
 
 /// <summary>
 /// Настройка направления линии HCF4067B_D - Общий вход.

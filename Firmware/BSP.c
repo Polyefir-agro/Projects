@@ -29,22 +29,9 @@ SensorButton sensorButton[16] = {
 	SensorButton(0, 15)
 };
 
-
-
-/**ExternalButton externalButton[10] = {
-    ExternalButton(0, HALF_DOWN),
-	ExternalButton(0, HALF_UP),
-	ExternalButton(0, FULL_DOWN),
-	ExternalButton(0, FULL_UP),
-	ExternalButton(0, 4),
-	ExternalButton(0, 5),
-	ExternalButton(0, 6),
-	ExternalButton(0, 7),
-	ExternalButton(0, 8),
-    ExternalButton(0, 9)
-};*/
 Keyboard sensorKeyboard;
 RemoteControl remoteControl;
+Table table;
 
 void BSP_init(void)
 {

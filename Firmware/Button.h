@@ -15,7 +15,7 @@ _keyRepeatTimeMs генерируется событие keyWasPressed.
   #define __Button_H
 
 
-#define _keyConfirmTimeMs 250
+#define _keyConfirmTimeMs 40
 #define _keyReleaseTimeMs 800
 #define _keyRepeatTimeMs  150
 
@@ -26,15 +26,6 @@ class Button {
 	   //const static uint16_t _keyConfirmTimeMs = 250;
 	   //const static uint16_t _keyReleaseTimeMs = 800;
 	   //const static uint16_t _keyRepeatTimeMs  = 150;
-
-	   //uint8_t autoPressFlag;
-	   uint8_t lastKeyState;
-	   uint8_t keyWasPressed;
-	   uint8_t onceFlag;
-	   //uint32_t nextAutoPressTime;
-
-	   SystemClock buttonHandleClock;/***/
-
 	   Button(uint8_t autoPress);
 
 	   virtual Boolean getPin();
@@ -44,6 +35,18 @@ class Button {
 	   uint8_t pressed();
 
 	   void setAutoPressing(uint8_t flag);
+
+	   //uint8_t getOnceFlag();
+
+   private: 
+
+	   //uint8_t autoPressFlag;
+	   uint8_t lastKeyState;
+	   uint8_t keyWasPressed;
+	   uint8_t onceFlag;
+	   //uint32_t nextAutoPressTime;
+
+	   SystemClock buttonHandleClock;
 };
 
 inline Button::Button(uint8_t autoPress)

@@ -379,6 +379,7 @@ void Usart::handleRxCompleteInterrupt()
 Boolean Usart::getRxData(uint8_t *data)
 {
     Boolean result = FALSE;
+    uint8_t messageSize = 0;
   
 	if(recieveEvent == TRUE)
 	{
@@ -387,13 +388,21 @@ Boolean Usart::getRxData(uint8_t *data)
 		result = TRUE; 
 
 		recieveEvent = FALSE;
-	}		  		
+                
+		messageSize = rxCurrentBuffer[6];
+			  		
           
-	for (uint8_t i = 0; i < rxCurrentBuffer[6]; i++)
-	{
-		*(data + i) = rxCurrentBuffer[7 + i];
-	}
-                					
+		for (uint8_t i = 0; i < messageSize; i++)
+		{
+			*(data + i) = rxCurrentBuffer[7 + i];
+		}
+          
+		for (uint8_t i = 0; i < messageSize + 9; i++)
+		{
+			rxCurrentBuffer[i] = 0;
+		} 
+    }
+        
 	return result;
 }
 

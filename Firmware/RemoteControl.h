@@ -17,7 +17,9 @@ class RemoteControl {
 
 	   void handle();
 
-	   Boolean buttonPressed(int8_t buttonNum);   
+	   Boolean buttonPressed(int8_t buttonNum);
+	   
+	   void resetButtonPressed(int8_t buttonNum);   
 
    private: 
 

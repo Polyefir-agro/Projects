@@ -3,7 +3,7 @@
 #ifndef __USART_H
   #define __USART_H
 
-#define MESSAGE_COUNT 4
+#define MESSAGE_COUNT 6
 #define MESSAGE_SIZE 15
 
 //baud : 9600, 19200, 38400, 115200;

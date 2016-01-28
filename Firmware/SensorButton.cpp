@@ -1,4 +1,4 @@
-#include "SensorMux.h"
+#include "SensorButton.h"
 
 #ifndef __SensorMux_H
 #error [E030] Не определен заголовочный файл SensorMux.h

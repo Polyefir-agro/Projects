@@ -1,4 +1,4 @@
-#include "SensorMux.h"
+#include "RemoteControl.h"
 
 #ifndef __RemoteControl_H
 #error [E030] Не определен заголовочный файл RemoteControl.h
@@ -29,4 +29,9 @@ void RemoteControl::handle()
 Boolean RemoteControl::buttonPressed(int8_t buttonNum)
 {
 	return button[buttonNum];
+}
+
+void RemoteControl::resetButtonPressed(int8_t buttonNum)
+{
+	button[buttonNum] = NONE;
 }
